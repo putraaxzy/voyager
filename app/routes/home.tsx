@@ -6,8 +6,8 @@ import { FaTimes } from "react-icons/fa";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Changelog" },
-    { name: "description", content: "Voyager Space - putrazxyo13" },
+    { title: "Voyager Space - putrazxyo13" },
+    { name: "description", content: "All of my projects" },
   ];
 }
 
