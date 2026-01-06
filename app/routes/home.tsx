@@ -7,7 +7,7 @@ import { FaTimes } from "react-icons/fa";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Changelog" },
-    { name: "description", content: "Voyage Space - putrazxyo13" },
+    { name: "description", content: "Voyager Space - putrazxyo13" },
   ];
 }
 
@@ -46,39 +46,42 @@ export default function Home() {
       <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        {/* Header Section */}
-        <div className="mb-12">
-          <div className="max-w-2xl mb-8">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-light text-slate-900 mb-2 tracking-tight">
+        <div className="mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-slate-900 mb-4 tracking-tight">
               VoyagerSpace
             </h1>
-            <p className="text-lg text-slate-500 font-light">
-              Track releases & updates
+            <p className="text-xl text-slate-600">
+               What's new in ma Project?
             </p>
           </div>
 
-          {/* Search Bar - Improved */}
-          <div className="relative max-w-2xl group">
-            <div className="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
-              <svg className="h-6 w-6 text-slate-400 group-focus-within:text-slate-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
+          {/* Search Bar - Redesigned */}
+          <div className="relative max-w-3xl mx-auto group">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500"></div>
+            <div className="relative flex items-center bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden transition-all duration-300 hover:shadow-xl">
+              <div className="pl-6 flex items-center pointer-events-none">
+                <svg className="h-5 w-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <input
+                type="text"
+                className="flex-1 bg-transparent text-slate-900 placeholder-slate-400 px-4 py-5 focus:outline-none text-base"
+                placeholder="Search projects by name..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+              {searchTerm && (
+                <button
+                  onClick={clearSearch}
+                  className="mr-4 p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all duration-200"
+                  aria-label="Clear search"
+                >
+                  <FaTimes className="h-4 w-4" />
+                </button>
+              )}
             </div>
-            <input
-              type="text"
-              className="backdrop-blur-xl bg-white/70 border-2 border-slate-200/50 text-slate-900 placeholder-slate-400 rounded-xl pl-14 pr-5 py-4 w-full focus:outline-none focus:ring-0 focus:border-slate-400 focus:bg-white/95 transition-all duration-300 shadow-md hover:shadow-lg text-base"
-              placeholder="Search projects..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            {searchTerm && (
-              <button
-                onClick={clearSearch}
-                className="absolute inset-y-0 right-0 pr-5 flex items-center text-slate-400 hover:text-slate-600 transition-colors"
-              >
-                <FaTimes className="h-5 w-5" />
-              </button>
-            )}
           </div>
         </div>
 
