@@ -7,7 +7,7 @@ import { FaTimes } from "react-icons/fa";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Changelog" },
-    { name: "description", content: "Application changelog and release notes" },
+    { name: "description", content: "Voyage Space - putrazxyo13" },
   ];
 }
 
