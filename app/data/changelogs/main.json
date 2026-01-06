@@ -1,0 +1,46 @@
+{
+  "name": "Main App",
+  "slug": "main",
+  "changes": [
+    {
+      "version": "2.1.0",
+      "date": "January 6, 2025",
+      "changes": [
+        {
+          "type": "added",
+          "description": "New changelog display component with clean design"
+        },
+        {
+          "type": "added",
+          "description": "Support for multiple change types (added, fixed, changed, removed)"
+        },
+        {
+          "type": "fixed",
+          "description": "Performance improvements in rendering large changelogs"
+        },
+        {
+          "type": "changed",
+          "description": "Updated styling to use consistent color scheme"
+        }
+      ]
+    },
+    {
+      "version": "2.0.5",
+      "date": "December 28, 2024",
+      "changes": [
+        {
+          "type": "fixed",
+          "description": "Fixed responsive layout issues on mobile devices"
+        },
+        {
+          "type": "fixed",
+          "description": "Corrected date formatting in changelog entries"
+        },
+        {
+          "type": "changed",
+          "description": "Improved accessibility with better color contrast"
+        }
+      ]
+    }
+  ]
+}

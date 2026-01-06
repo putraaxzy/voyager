@@ -1,0 +1,24 @@
+{
+  "name": "Mobile App",
+  "slug": "mobile",
+  "changes": [
+    {
+      "version": "1.2.0",
+      "date": "January 3, 2025",
+      "changes": [
+        {
+          "type": "added",
+          "description": "Dark mode support for iOS and Android"
+        },
+        {
+          "type": "added",
+          "description": "Offline mode for better connectivity handling"
+        },
+        {
+          "type": "fixed",
+          "description": "Fixed crash on app resume"
+        }
+      ]
+    }
+  ]
+}
