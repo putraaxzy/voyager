@@ -6,12 +6,34 @@ export interface Change {
 export interface ChangeVersion {
   version: string;
   date: string;
+  notes?: string;
   changes: Change[];
+}
+
+export interface MediaItem {
+  type: "image" | "video";
+  url: string;
+  aspectRatio: string;
+}
+
+export interface DownloadLink {
+  label: string;
+  url: string;
+}
+
+export interface Credit {
+  name: string;
+  reason: string;
+  url?: string;
 }
 
 export interface ChangelogProject {
   name: string;
   slug: string;
+  thumbnail?: string;
+  media?: MediaItem[];
+  downloadLinks?: DownloadLink[];
+  credits?: Credit[];
   changes: ChangeVersion[];
 }
 

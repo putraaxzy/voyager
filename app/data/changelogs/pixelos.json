@@ -1,0 +1,210 @@
+{
+    "name": "PixelOS QPR1",
+    "slug": "pixelos",
+    "thumbnail": "/pos/1/gojo.png",
+    "media": [
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548326.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548327.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548328.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548329.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548330.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548331.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548332.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548333.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548334.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548335.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548336.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548337.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548338.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548339.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548340.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548341.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548342.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6267284392669548343.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/6269536192483233278.jpg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "image",
+            "url": "/pos/1/images/knsdknsnds.jpeg",
+            "aspectRatio": "9:16"
+        },
+        {
+            "type": "video",
+            "url": "/pos/1/vid/screen-20260108-195740.mp4",
+            "aspectRatio": "9:16"
+        }
+    ],
+    "changes": [
+        {
+            "version": "PixelOS_S666LN-16.1-20260108-0914.zip",
+            "date": "January 8, 2026",
+            "notes": "If you encounter any bugs, please provide logs.\nYou might experience slight lag after boot as the system settles.\n\n\n**Notice:**\nIn the next update, I plan to fix minor lags in Settings and other apps.\nI am currently working on an overlay to address this. Please be patient.",
+            "changes": [
+                {
+                    "type": "added",
+                    "description": "Signed build"
+                },
+                {
+                    "type": "changed",
+                    "description": "Using power-libperfmgr"
+                },
+                {
+                    "type": "changed",
+                    "description": "Disable VSync for CPU rendered apps"
+                },
+                {
+                    "type": "changed",
+                    "description": "Enable full ART optimizations with VDEX/ODEX"
+                },
+                {
+                    "type": "changed",
+                    "description": "Enable AOSP surfaceflinger"
+                },
+                {
+                    "type": "changed",
+                    "description": "Set readahead_size_kb=128 to vendor, product and system_ext"
+                },
+                {
+                    "type": "removed",
+                    "description": "Drop perfmgr and dramboost writes"
+                },
+                {
+                    "type": "removed",
+                    "description": "Remove unused audio codecs"
+                },
+                {
+                    "type": "changed",
+                    "description": "Tune F2FS and dirty writeout policy for modern devices"
+                },
+                {
+                    "type": "changed",
+                    "description": "Adjust CPU uclamp min, add audio and SurfaceFlinger properties, and declare new AIDL HALs"
+                },
+                {
+                    "type": "fixed",
+                    "description": "Fixed blur in app drawer"
+                },
+                {
+                    "type": "fixed",
+                    "description": "Fixed lag in settings"
+                },
+                {
+                    "type": "added",
+                    "description": "Shipped with latest mahiru"
+                },
+                {
+                    "type": "changed",
+                    "description": "Sync with latest source"
+                },
+                {
+                    "type": "changed",
+                    "description": "Set 120Hz frame rate multiple threshold"
+                }
+            ]
+        }
+    ],
+    "downloadLinks": [
+        {
+            "label": "SharePoint Download",
+            "url": "https://ylsd7-my.sharepoint.com/personal/pikachu_ylsd7_onmicrosoft_com/_layouts/15/download.aspx?share=IQCKYoZw0LrQSY45LKYPnavGAXSBB0jh2MkVqR9V2Eg24CI"
+        },
+        {
+            "label": "SourceForge Download",
+            "url": "https://sourceforge.net/projects/itel-s666ln/files/PixelOS_S666LN-v16.1-20260108-0914.zip/download"
+        },
+        {
+            "label": "Keybox (Telegram)",
+            "url": "https://t.me/yuriiroot/3058"
+        }
+    ],
+    "credits": [
+        {
+            "name": "fjrXTR",
+            "reason": "for base tree"
+        },
+        {
+            "name": "shirayuki39",
+            "reason": "for kernel and reference commit"
+        },
+        {
+            "name": "Yaseakun",
+            "reason": "for providing server and commit reference",
+            "url": "https://t.me/Yaseakun"
+        }
+    ]
+}
