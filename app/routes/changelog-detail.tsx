@@ -5,7 +5,7 @@ import { getChangelogByVersion, getProjectBySlug } from "../lib/changelogs";
 export function meta({ params }: Route.MetaArgs) {
   const project = getProjectBySlug(params.slug);
   return [
-    { title: `${project?.name} v${params.version}` },
+    { title: `${project?.name} ${params.version}` },
     {
       name: "description",
       content: `Changelog for ${project?.name} version ${params.version}`,
@@ -54,7 +54,7 @@ export default function ChangelogDetail({ params }: Route.ComponentProps) {
               Not found
             </h1>
             <p className="text-slate-500 font-light">
-              The changelog for {project?.name} v{params.version} does not
+              The changelog for {project?.name} {params.version} does not
               exist.
             </p>
           </div>
@@ -123,12 +123,12 @@ export default function ChangelogDetail({ params }: Route.ComponentProps) {
               ← Back to {project.name}
             </a>
 
-            <div className="flex flex-col gap-3 mb-6">
-              <div className="min-w-0">
-                <h1 className="text-2xl sm:text-3xl md:text-5xl font-light text-slate-900 tracking-tight mb-1 sm:mb-2 break-words leading-tight">
-                  v{changelog.version}
+            <div className="flex flex-col gap-2 mb-6">
+              <div className="min-w-0 w-full">
+                <h1 className="text-sm sm:text-base md:text-xl font-light text-slate-900 tracking-tight mb-1 sm:mb-2 leading-snug break-all" style={{ wordBreak: 'break-word', overflowWrap: 'break-word', hyphens: 'auto' }}>
+                  {changelog.version.startsWith('v') ? changelog.version.substring(1) : changelog.version}
                 </h1>
-                <p className="text-xs sm:text-base text-slate-500 font-light">
+                <p className="text-xs sm:text-sm text-slate-500 font-light">
                   {project.name} Update
                 </p>
               </div>
